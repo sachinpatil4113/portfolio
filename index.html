@@ -3,347 +3,427 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sachin Patil </title>
-    <link rel="icon" href="profile-no-background.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Sachin Patil — Technology Leader</title>
+    <meta name="description" content="Partner & Head of Technology specializing in AI systems, multi-agent architectures, and scalable platform design across Fintech, EdTech, Healthcare & Marketplace.">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">Sachin<span>Patil</span></a>
-        <nav>
+
+    <!-- Header -->
+    <header id="header">
+        <a href="#home" class="logo"><img src="logo.svg" alt="SP" class="logo-icon">Sachin<span>Patil</span></a>
+        <nav class="desktop-nav">
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#innovation">AI Innovation</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <!-- <li><a href="#projects">Projects</a></li> -->
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="Sachin-Patil-Resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="https://sp-sachin106.medium.com/" target="_blank">Blogs</a></li>
+                <li><a href="Sachin-Patil-Resume.pdf" target="_blank" class="nav-resume-btn">Resume</a></li>
             </ul>
         </nav>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+            <span></span><span></span><span></span>
+        </button>
     </header>
 
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#innovation">AI Innovation</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://sp-sachin106.medium.com/" target="_blank">Blogs</a></li>
+            <li><a href="Sachin-Patil-Resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </div>
+
+    <main>
+
+    <!-- Hero -->
     <section class="hero" id="home">
-        <div class="particles">
-            <!-- Particles will be added via JavaScript -->
-        </div>
+        <canvas id="neuralCanvas"></canvas>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Hi, I'm <span style="color: var(--accent);">Sachin Patil</span></h1>
-                <h2>Partner & Head of Technology</h2>
-                <p>I bring 10 years of expertise in software development, system architecture, and team leadership. I specialize in delivering innovative solutions across Fintech, Healthcare, EdTech, and Marketplace sectors. My experience spans designing scalable systems, managing engineering teams, and ensuring seamless delivery. I am committed to driving technological growth and efficiency, crafting solutions that align with business goals.</p>
-                <a href="#contact" class="cta-btn">Get In Touch</a>
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1>Sachin Patil</h1>
+                <h2 class="typing-wrap"><span id="typingText"></span><span class="cursor">|</span></h2>
+                <p class="hero-desc">Building intelligent systems that scale. 10+ years of expertise in AI-driven architecture, multi-agent systems, and technology leadership across Fintech, EdTech, Healthcare &amp; Marketplace domains.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+                    <a href="Sachin-Patil-Resume.pdf" target="_blank" class="btn btn-outline"><i class="fas fa-download"></i> Resume</a>
+                </div>
             </div>
             <div class="hero-image">
-                <img src="profile-no-background.png" alt="Sachin Patil">
+                <div class="hero-img-wrap">
+                    <div class="hero-img-glow"></div>
+                    <img src="profile-no-background.png" alt="Sachin Patil — AI Technology Leader">
+                </div>
             </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
+    <!-- About -->
     <section class="about" id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>I am a Partner & Head of Technology with 10 years of experience in software development, spanning across EdTech, Fintech, Healthcare, and Marketplace domains. I specialize in system architecture design, technology leadership, team management, and full-stack development.
-                    <br><br>
-                    Passionate about embracing new technologies, I strive to be a valuable asset in driving organizational success. I thrive in dynamic environments where I can leverage my expertise to drive innovation, deliver impactful solutions, and contribute to the growth of the organization.
-                    <br><br>
-                    I excel at managing engineering budgets, implementing agile methodologies, and mentoring team members to enhance their technical skills. My expertise ranges from microservices architecture to DevOps practices, ensuring the delivery of efficient and scalable software solutions.</p>
-            </div>
-            <div class="about-stats">
-                <div class="stat-card">
-                    <h3>10</h3>
-                    <p>Years Experience</p>
-                </div>
-                <div class="stat-card">
-                    <h3>20+</h3>
-                    <p>Team Size Managed</p>
-                </div>
-                <div class="stat-card">
-                    <h3>30%</h3>
-                    <p>Server Cost Reduction</p>
-                </div>
-                <div class="stat-card">
-                    <h3>25%</h3>
-                    <p>Team Productivity Boost</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="experience" id="experience">
-        <h2 class="section-title">My Experience</h2>
-        <div class="experience-timeline">
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Partner & Head of Technology </h3>
-                    <h4> <a class='ahref' href="https://www.wizr.in/"  target="_blank"> WiZR</a> | <a class='ahref' href="https://eduvanz.com"  target="_blank">EFPL</a> </h4>
-                    <h5 class="exprince-year">Apr 2025 - Present</h5>
-                    <br>
-                    <p><ul style="list-style: none; padding-left: 0;">
-                        <li>💼 <strong>Led technology strategy</strong> for the company, driving innovation and aligning tech solutions with business goals.</li>
-                        <li>🔧 <strong>Designed and developed core systems</strong>, ensuring scalable architecture and high performance.</li>
-                        <li>🛠️ <strong>Built and managed cross-functional development teams</strong>, fostering a culture of continuous improvement.</li>
-                        <li>🌐 <strong>Architected end-to-end solutions</strong> for large-scale, high-impact projects, delivering both B2B and B2C products.</li>
-                        <li>🧑‍💻 <strong>Hands-on coding and problem-solving</strong>, regularly contributing to development efforts and optimizing systems.</li>
-                        <li>📈 <strong>Improved development workflows</strong>, driving best practices in coding, deployment, and automation.</li>
-                      </ul>
-                    </p>
-                </div>
-                <div class="timeline-date">2025 - Present</div>
-                <div class="timeline-dot"></div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Vice President</h3>
-                    <h4> <a class='ahref' href="https://www.wizr.in/" target="_blank"> WiZR</a> | <a class='ahref' href="https://eduvanz.com" target="_blank">EFPL</a> </h4>
-                    <h5 class="exprince-year">July 2024 - Apr 2025</h5>
-                    <br>
-                    <p>
-                        <ul style="list-style: none; padding-left: 0;">
-                            <li>💼 <strong>An integral part</strong> of two different segment projects: <strong>Marketplace</strong> and <strong>Fintech</strong>.</li>
-                            <li>🧑‍💻 <strong>Designed and developed</strong> from scratch, <strong>hired a team</strong>, and explored new technology stacks.</li>
-                            <li>🌐 <strong>Ventured into new segments</strong>: B2C and B2B, expanding the product offerings.</li>
-                            <li>⏱️ <strong>Worked under tight deadlines</strong> with no handholding, showcasing <strong>self-sufficiency</strong> and focus.</li>
-                            <li>🤝 <strong>Collaborated closely with leadership</strong> and <strong>CXOs</strong>, aligning tech with business strategy.</li>
-                            <li>🖥️ <strong>Handled product design</strong>, <strong>tech architecture design</strong>, <strong>technology selection</strong>, <strong>team management</strong>, <strong>sprints</strong>, and <strong>delivery</strong>.</li>
-                            <li>🔧 <strong>Conducted code reviews</strong> and <strong>got hands-on coding</strong> whenever required to ensure quality.</li>
-                            <li>🚀 <strong>Achieved on-time delivery record</strong>, consistently meeting deadlines with high-quality output.</li>
-                          </ul>
-                          
-                    </p>
-                </div>
-                <div class="timeline-date">2024 - 2025</div>
-                <div class="timeline-dot"></div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Sr. Engineering Manager</h3>
-                    <h4> <a class='ahref' href="https://eduvanz.com" target="_blank">Eduvanz Finance Private Limited (EFPL)</a> </h4>
-                    <h5 class="exprince-year">Apr 2022 - Jun 2023</h5>
-                    <br>
-                    <p>
-                        <ul style="list-style: none; padding-left: 0;">
-                            <li>✅ <strong>Led</strong> a team of <strong>23 engineers</strong>, driving project execution and team development.</li>
-                            <li>🧮 <strong>Managed</strong> engineering budgets effectively, optimizing resource usage.</li>
-                            <li>🔄 <strong>Implemented</strong> agile methodologies (Scrum, Kanban) for faster and smoother delivery.</li>
-                            <li>🚀 <strong>Ensured</strong> on-time, high-quality product launches.</li>
-                            <li>💸 <strong>Reduced server costs by 30%</strong> through smart infrastructure improvements.</li>
-                            <li>📈 <strong>Boosted team productivity by 25%</strong> with improved workflows and automation tools.</li>
-                          </ul>
-                          
-                    </p>
-                </div>
-                <div class="timeline-date">2022 - 2023</div>
-                <div class="timeline-dot"></div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Engineering Manager</h3>
-                    <h4> <a class='ahref' href="https://eduvanz.com" target="_blank">Eduvanz Finance Private Limited</a> </h4>
-                    <h5 class="exprince-year">July 2020 - Apr 2022</h5>
-                    <br>
-                    <p>
-                        <ul style="list-style: none; padding-left: 0;">
-
-                            <li>👥 <strong>Led a team of 20+ engineers</strong>, driving collaboration and project execution.</li>
-                            <li>💬 <strong>Worked closely with the management team</strong> to align engineering efforts with business goals.</li>
-                            <li>💰 <strong>Managed engineering budgets</strong> to maximize efficiency and control costs.</li>
-                            <li>🔄 <strong>Implemented agile methodologies</strong> (Scrum/Kanban) for faster and adaptive delivery.</li>
-                            <li>⏳ <strong>Ensured timely product releases</strong> while maintaining high quality standards.</li>
-                            <li>💸 <strong>Reduced server costs by 30%</strong> through smart infrastructure optimization.</li>
-                            <li>📈 <strong>Increased team productivity by 25%</strong> with improved workflows and performance coaching.</li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="timeline-date">2020 - 2022</div>
-                <div class="timeline-dot"></div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Technical Team Lead</h3>
-                    <h4> <a class='ahref' href="https://eduvanz.com" target="_blank">Eduvanz Finance Private Limited</a> </h4>
-                    <h5 class="exprince-year">Sep 2018 - July 2020</h5>
-                    <br>
-                    <p><ul style="list-style: none; padding-left: 0;">
-                        <li>👥 <strong>Joined as part of the core team</strong>, contributing to critical decision-making and project direction.</li>
-                        <li>🛠️ <strong>Worked under the core discipline</strong>, setting up the right set of technologies to align with business objectives.</li>
-                        <li>🔧 <strong>Led team hiring and motivation efforts</strong>, building a highly productive and motivated engineering team.</li>
-                        <li>💻 <strong>Set up infrastructure</strong> including code review processes, server setup, and monitoring for smooth operations.</li>
-                        <li>🔗 <strong>Integrated with external parties</strong> like <strong>banks</strong>, <strong>payment gateways</strong>, <strong>bureaus</strong>, and <strong>KYC vendors</strong> for seamless system connectivity.</li>
-                      </ul>
-                      
-                      </p>
-                </div>
-                <div class="timeline-date">2018 - 2020</div>
-                <div class="timeline-dot"></div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Senior Fullstack Developer </h3>
-                    <h4> <a class='ahref' href="https://gromor.in" target="_blank">Gromor Finance Pvt. Ltd. (NBFC Fintech, MSME Loans)</a> </h4>
-                    <h5 class="exprince-year">June 2017 - Sep 2018</h5>
-                    <br>
-                    <p>
-                        <ul style="list-style: none; padding-left: 0;">
-                            <li>🏗️ <strong>Architected microservices</strong> and enhanced loan management/origination systems using <strong>Angular</strong>, <strong>PHP</strong>, <strong>JavaScript</strong>, and <strong>Python</strong>.</li>
-                            <li>🎨 <strong>Led UI design</strong> efforts, performed <strong>code reviews</strong>, and enforced best coding practices.</li>
-                            <li>🚀 <strong>Managed production and environment servers</strong> (CI/CD pipelines, AWS cloud infrastructure).</li>
-                            <li>🧩 <strong>Served as a core team member</strong>, ensuring <strong>seamless project delivery</strong> and <strong>system scalability</strong>.</li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="timeline-date">2017 - 2018</div>
-                <div class="timeline-dot"></div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Software Developer</h3>
-                    <h4> <a class='ahref' href="https://creliohealth.com"  target="_blank"> Crelio Health (LiveHealth) </a> </h4>
-                    <h5 class="exprince-year">Aug 2016 - June 2017</h5>
-                    <br>
-                    <p><ul style="list-style: none; padding-left: 0;">
-                        <li>🛡️ <strong>Built HIPAA-compliant systems</strong> using <strong>Python/Django</strong>, integrating healthcare machines and CRM platforms for automated patient reports.</li>
-                        <li>☁️ <strong>Designed AWS-powered notification workflows</strong> (SMS/Email) to alert patients and doctors in <strong>real-time</strong>.</li>
-                        <li>🔒 <strong>Enhanced data security and care coordination</strong> through <strong>EHR portals</strong> using <strong>JavaScript</strong> and <strong>MySQL</strong>.</li>
-                      </ul>
-                      </p>
-                </div>
-                <div class="timeline-date">2016 - 2017</div>
-                <div class="timeline-dot"></div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Software Developer </h3>
-                    <h4> <a class='ahref' href="https://tudip.com/" target="_blank"> Tudip Technologies Pvt. Ltd. (Software Services) </a> </h4>
-                    <h5 class="exprince-year">June 2015 - July 2016</h5>
-                    <br>
-                    <p> <ul style="list-style: none; padding-left: 0;">
-                        <li>🛠️ <strong>Started</strong> with curiosity-driven projects, building simple CRUD apps and collaborative tools.</li>
-                        <li>🔥 <strong>Gained hands-on experience</strong> across the full software development lifecycle — from requirements gathering to development, testing, and deployment.</li>
-                        <li>🌐 <strong>Specialized</strong> in building user-friendly, scalable web applications.</li>
-                        <li>🧠 <strong>Solved complex problems</strong> using logical and creative thinking approaches.</li>
-                        <li>🤝 <strong>Collaborated closely</strong> with clients based in the <strong>U.S. and U.K.</strong> on diverse projects.</li>
-                      </ul>
-                      </p>
-                </div>
-                <div class="timeline-date">2015 - 2016</div>
-                <div class="timeline-dot"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="skills" id="skills">
-        <h2 class="section-title">My Skills</h2>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3>Languages & Frameworks</h3>
-                <ul class="skill-list">
-                    <li><i class="fas fa-code"></i> Node.js / Express.js</li>
-                    <li><i class="fas fa-code"></i> PHP (Laravel, CodeIgniter, Yii)</li>
-                    <li><i class="fas fa-code"></i> Python (Django)</li>
-                    <li><i class="fas fa-code"></i> React.js, Next.js, Angular JS, </li>
-                    <li><i class="fas fa-code"></i> TypeScript</li>
-                    <li><i class="fas fa-code"></i> Mobile applications - Android, React Native, Flutter</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Database & Infrastructure</h3>
-                <ul class="skill-list">
-                    <li><i class="fas fa-database"></i> MySQL, PostgreSQL, MongoD</li>
-                    <li><i class="fas fa-server"></i> AWS Cloud Services, Digital Ocean, Google cloud provider (GCP), Heroku </li>
-                    <li><i class="fas fa-cubes"></i> Docker, ORM</li>
-                    <li><i class="fas fa-code-branch"></i> Jenkins CI/CD, Cloudify,  Kafka, RabbitMQ, AWS SQS</li>
-                    <li><i class="fas fa-database"></i>Architecures - Microservices, Monolithic, Hybrid </li>
-                    <li><i class="fas fa-database"></i>Elastic Search, Algolia </li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>AI & Tools</h3>
-                <ul class="skill-list">
-                    <li><i class="fas fa-robot"></i> GitHub Copilot X</li>
-                    <li><i class="fas fa-robot"></i> Codeium, Tabnine, Amazon CodeWhisperer</li>
-                    <li><i class="fas fa-robot"></i> DeepCode (by Snyk)</li>
-                    <li><i class="fas fa-robot"></i> Sider</li>
-                    <li><i class="fas fa-robot"></i> Mutable.ai</li>
-                    <li><i class="fas fa-robot"></i> DALL-E, Gemini, Chatgpt-4.O</li>
-                    <li><i class="fas fa-robot"></i> DeepSeek, Canvas</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Management & Process</h3>
-                <ul class="skill-list">
-                    <li><i class="fas fa-users"></i> Team Management</li>
-                    <li><i class="fas fa-chart-line"></i> Budget Management</li>
-                    <li><i class="fas fa-tasks"></i> Agile, Scrum,Kanban </li>
-                    <li><i class="fas fa-cogs"></i> Team Motivation and Mentorship</li>
-                    <li><i class="fas fa-chart-pie"></i> Performance Optimization</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact-section" id="contact">
         <div class="container">
-            <div class="section-title">
-                <h2>Get In Touch</h2>
-                <p>Feel free to reach out to me through any of the following channels.</p>
-            </div>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3>Phone</h3>
-                        <p><a href="tel:+919766919241">+91 9766919241</a></p>
-                    </div>
+            <h2 class="section-heading reveal"><span class="gradient-text">About</span> Me</h2>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>I'm a technology leader who believes <strong>AI isn't just a tool&mdash;it's a paradigm shift</strong>. As Partner &amp; Head of Technology at WiZR, I lead teams of 25+ engineers, architect AI-first products, and design systems that serve millions.</p>
+                    <p>My journey across EdTech, Fintech, Healthcare, and Marketplace domains has given me a unique perspective: I don't just build software&mdash;I engineer <strong>intelligent, scalable ecosystems</strong>. From designing multi-agent AI systems across all major Indian languages to building assessment engines powered by AI, I thrive at the intersection of artificial intelligence and system architecture.</p>
+                    <p>I bring a hands-on approach to technology leadership, balancing strategic vision with deep technical execution. Whether it's reducing server costs by 30%, boosting team productivity by 50%, or pioneering AI-driven product innovation&mdash;I'm driven by <strong>measurable impact</strong>.</p>
                 </div>
-                
-                <div class="contact-item">
-                    <div class="icon">
-                        <i class="fas fa-envelope"></i>
+                <div class="about-stats">
+                    <div class="stat-card reveal">
+                        <h3><span class="counter" data-target="10">0</span>+</h3>
+                        <p>Years Experience</p>
                     </div>
-                    <div class="contact-details">
-                        <h3>Email</h3>
-                        <p><a href="mailto:sp.sachin106@gmail.com">sp.sachin106@gmail.com</a></p>
+                    <div class="stat-card reveal">
+                        <h3><span class="counter" data-target="25">0</span>+</h3>
+                        <p>Engineers Led</p>
                     </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="icon">
-                        <i class="fab fa-linkedin-in"></i>
+                    <div class="stat-card reveal">
+                        <h3><span class="counter" data-target="30">0</span>%</h3>
+                        <p>Server Cost Reduction</p>
                     </div>
-                    <div class="contact-details">
-                        <h3>LinkedIn</h3>
-                        <p><a href="https://www.linkedin.com/in/sachinpatil106" target="_blank">linkedin.com/in/sachinpatil106</a></p>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="icon">
-                        <i class="fab fa-github"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3>GitHub</h3>
-                        <p><a href="https://github.com/sachinpatil4113" target="_blank">github.com/sachinpatil4113</a></p>
+                    <div class="stat-card reveal">
+                        <h3><span class="counter" data-target="50">0</span>%</h3>
+                        <p>Productivity Boost</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- AI Innovation -->
+    <section class="innovation" id="innovation">
+        <div class="container">
+            <h2 class="section-heading reveal"><span class="gradient-text">AI</span> Innovation</h2>
+            <p class="section-sub reveal">Pioneering AI-first solutions that transform how businesses operate</p>
+            <div class="innovation-grid">
+
+                <div class="innovation-card reveal">
+                    <div class="card-border"></div>
+                    <div class="card-inner">
+                        <div class="card-icon"><i class="fas fa-language"></i></div>
+                        <h3>Multi-Language AI Agent System</h3>
+                        <p>Designed and deployed a multi-agent AI system operating across all major Indian languages. Leverages LLMs, NLP, and multi-agent orchestration to deliver intelligent, context-aware interactions at scale&mdash;bridging language barriers through AI.</p>
+                        <div class="card-tags">
+                            <span>Multi-Agent</span><span>NLP</span><span>LLMs</span><span>Multilingual</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="innovation-card reveal">
+                    <div class="card-border"></div>
+                    <div class="card-inner">
+                        <div class="card-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Assessment Creation AI Engine</h3>
+                        <p>Architected an AI-powered assessment creation agent and engine that generates intelligent, adaptive evaluations. Uses generative AI for contextually relevant questions, adaptive difficulty scaling, and comprehensive assessment frameworks.</p>
+                        <div class="card-tags">
+                            <span>Generative AI</span><span>AI Agents</span><span>EdTech</span><span>Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="innovation-card reveal">
+                    <div class="card-border"></div>
+                    <div class="card-inner">
+                        <div class="card-icon"><i class="fas fa-microphone-lines"></i></div>
+                        <h3>AI Speech Evaluation &amp; Gap Analysis</h3>
+                        <p>Built an AI system that evaluates user speech and produces comprehensive AI-generated reports for product gap analysis. Combines speech-to-text, sentiment analysis, and generative AI reporting to transform voice data into actionable insights.</p>
+                        <div class="card-tags">
+                            <span>Speech AI</span><span>Analytics</span><span>Gen AI Reports</span><span>NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-heading reveal"><span class="gradient-text">My</span> Experience</h2>
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3>Partner & Head of Technology</h3>
+                            <span class="timeline-company"><a href="https://www.wizr.in/" target="_blank">WiZR</a> | <a href="https://eduvanz.com" target="_blank">EFPL</a></span>
+                            <span class="timeline-date">Apr 2025 &mdash; Present</span>
+                        </div>
+                        <ul>
+                            <li>Spearheading AI-first technology strategy, driving intelligent product innovation across EdTech and Fintech</li>
+                            <li>Designed and deployed <strong>multi-agent AI systems</strong> across all major Indian languages using LLMs and NLP</li>
+                            <li>Architected <strong>AI-powered assessment creation engine</strong> with intelligent question generation and adaptive evaluation</li>
+                            <li>Built <strong>speech evaluation AI</strong> system producing automated gap analysis reports using generative AI</li>
+                            <li>Leading 25+ engineers across cross-functional development teams with hands-on coding</li>
+                            <li>Architecting scalable end-to-end solutions for both B2B and B2C products</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3>Vice President</h3>
+                            <span class="timeline-company"><a href="https://www.wizr.in/" target="_blank">WiZR</a> | <a href="https://eduvanz.com" target="_blank">EFPL</a></span>
+                            <span class="timeline-date">Jul 2024 &mdash; Apr 2025</span>
+                        </div>
+                        <ul>
+                            <li>Led Marketplace and Fintech segments from concept to launch&mdash;designing and building from scratch</li>
+                            <li>Hired and built high-performance engineering teams for new product verticals</li>
+                            <li>Owned product design, tech architecture, technology selection, sprints, and delivery</li>
+                            <li>Collaborated with CXOs to align technology with business strategy</li>
+                            <li>Maintained consistent on-time delivery record with high-quality output</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3>Sr. Engineering Manager</h3>
+                            <span class="timeline-company"><a href="https://eduvanz.com" target="_blank">Eduvanz Finance Private Limited</a></span>
+                            <span class="timeline-date">Apr 2022 &mdash; Jun 2023</span>
+                        </div>
+                        <ul>
+                            <li>Led a team of 25 engineers across development, QA, and DevOps</li>
+                            <li>Reduced server costs by 30% through infrastructure optimization</li>
+                            <li>Boosted team productivity by 50% with improved workflows and automation</li>
+                            <li>Implemented agile methodologies, reducing project delivery time by 20%</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3>Engineering Manager</h3>
+                            <span class="timeline-company"><a href="https://eduvanz.com" target="_blank">Eduvanz Finance Private Limited</a></span>
+                            <span class="timeline-date">Jul 2020 &mdash; Apr 2022</span>
+                        </div>
+                        <ul>
+                            <li>Managed 20+ engineers driving cross-functional collaboration</li>
+                            <li>Controlled engineering budgets, maximizing operational efficiency</li>
+                            <li>Implemented Scrum and Kanban for faster, adaptive delivery cycles</li>
+                            <li>Achieved consistent infrastructure cost reductions and performance gains</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3>Technical Team Lead</h3>
+                            <span class="timeline-company"><a href="https://eduvanz.com" target="_blank">Eduvanz Finance Private Limited</a></span>
+                            <span class="timeline-date">Sep 2018 &mdash; Jul 2020</span>
+                        </div>
+                        <ul>
+                            <li>Core team member shaping technology direction and critical decisions</li>
+                            <li>Established technology stack, development workflows, and CI/CD pipelines</li>
+                            <li>Led hiring, built a productive engineering team, and set up monitoring infrastructure</li>
+                            <li>Integrated banking, payment gateway, bureau, and KYC vendor systems</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3>Senior Fullstack Developer</h3>
+                            <span class="timeline-company"><a href="https://gromor.in" target="_blank">Gromor Finance Pvt. Ltd.</a></span>
+                            <span class="timeline-date">Jun 2017 &mdash; Sep 2018</span>
+                        </div>
+                        <ul>
+                            <li>Architected microservices for loan management and origination systems</li>
+                            <li>Led UI development in Angular, enforced coding standards via peer reviews</li>
+                            <li>Managed production servers and AWS CI/CD pipelines</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3>Software Developer</h3>
+                            <span class="timeline-company"><a href="https://creliohealth.com" target="_blank">Crelio Health (LiveHealth)</a></span>
+                            <span class="timeline-date">Aug 2016 &mdash; Jun 2017</span>
+                        </div>
+                        <ul>
+                            <li>Built HIPAA-compliant healthcare systems using Python/Django</li>
+                            <li>Designed real-time AWS notification workflows for patients and doctors</li>
+                            <li>Enhanced data security and care coordination through EHR portals</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3>Software Developer</h3>
+                            <span class="timeline-company"><a href="https://tudip.com/" target="_blank">Tudip Technologies Pvt. Ltd.</a></span>
+                            <span class="timeline-date">Jun 2015 &mdash; Jul 2016</span>
+                        </div>
+                        <ul>
+                            <li>Full-stack development across the complete software development lifecycle</li>
+                            <li>Collaborated with U.S. and U.K. clients on diverse web application projects</li>
+                            <li>Built scalable applications using PHP (CodeIgniter/Laravel) and Python</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-heading reveal"><span class="gradient-text">My</span> Skills</h2>
+            <div class="skills-grid">
+
+                <div class="skill-group reveal">
+                    <div class="skill-group-head">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI & Machine Learning</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>LLMs & Generative AI</span>
+                        <span>Multi-Agent Systems</span>
+                        <span>NLP & Language Processing</span>
+                        <span>Prompt Engineering</span>
+                        <span>RAG Architecture</span>
+                        <span>LangChain</span>
+                        <span>Speech-to-Text / TTS</span>
+                        <span>AI System Architecture</span>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal">
+                    <div class="skill-group-head">
+                        <i class="fas fa-code"></i>
+                        <h3>Languages & Frameworks</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Node.js / Express.js</span>
+                        <span>TypeScript</span>
+                        <span>Python / Django</span>
+                        <span>React.js / Next.js</span>
+                        <span>PHP (Laravel, CI, Yii)</span>
+                        <span>Angular</span>
+                        <span>React</span>
+                        <span>Android</span>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal">
+                    <div class="skill-group-head">
+                        <i class="fas fa-server"></i>
+                        <h3>Cloud & Infrastructure</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>AWS Cloud Services</span>
+                        <span>GCP</span>
+                        <span>Docker / Kubernetes</span>
+                        <span>Microservices Architecture</span>
+                        <span>Serverless</span>
+                        <span>Jenkins CI/CD</span>
+                        <span>Kafka / RabbitMQ / SQS</span>
+                        <span>Elasticsearch / Algolia</span>
+                        <span>MySQL / PostgreSQL / MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal">
+                    <div class="skill-group-head">
+                        <i class="fas fa-users-gear"></i>
+                        <h3>Leadership & Strategy</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Engineering Team Leadership</span>
+                        <span>Budget & Cost Management</span>
+                        <span>Agile / Scrum / Kanban</span>
+                        <span>System Design & Architecture</span>
+                        <span>Stakeholder Management</span>
+                        <span>Mentorship & Development</span>
+                        <span>Performance Optimization</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-heading reveal"><span class="gradient-text">Get In</span> Touch</h2>
+            <p class="section-sub reveal">Let's build something intelligent together</p>
+            <div class="contact-grid">
+                <a href="tel:+919766919241" class="contact-card reveal">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <h3>Phone</h3>
+                    <p>+91 9766919241</p>
+                </a>
+                <a href="mailto:sp.sachin106@gmail.com" class="contact-card reveal">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>sp.sachin106@gmail.com</p>
+                </a>
+                <a href="https://www.linkedin.com/in/sachinpatil106" target="_blank" class="contact-card reveal">
+                    <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p>sachinpatil106</p>
+                </a>
+                <a href="https://github.com/sachinpatil4113" target="_blank" class="contact-card reveal">
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <h3>GitHub</h3>
+                    <p>sachinpatil4113</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Sachin Patil. All rights reserved.</p>
+        <div class="container footer-inner">
+            <a href="#home" class="logo"><img src="logo.svg" alt="SP" class="logo-icon">Sachin<span>Patil</span></a>
+            <p>&copy; 2025 Sachin Patil. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/sachinpatil106" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/sachinpatil4113" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:sp.sachin106@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
     </footer>
 
-    <!-- Scripts sections -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>    
+    <script src="script.js"></script>
 </body>
 </html>
-            

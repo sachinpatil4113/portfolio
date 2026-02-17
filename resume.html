@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachin Patil — Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        @page {
+            size: A4;
+            margin: 10mm 12mm;
+        }
+
+        body {
+            font-family: 'Outfit', Calibri, Arial, sans-serif;
+            font-size: 9pt;
+            line-height: 1.35;
+            color: #1a1a1a;
+            background: #fff;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .page {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 10mm 12mm;
+        }
+
+        /* --- Header / Contact --- */
+        .resume-header {
+            text-align: center;
+            margin-bottom: 8px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #1a1a1a;
+        }
+
+        .resume-header h1 {
+            font-size: 18pt;
+            font-weight: 700;
+            color: #1a1a1a;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 1px;
+        }
+
+        .resume-header .title {
+            font-size: 9.5pt;
+            font-weight: 500;
+            color: #444;
+            margin-bottom: 5px;
+        }
+
+        .contact-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 3px 14px;
+            font-size: 8pt;
+            color: #333;
+        }
+
+        .contact-row a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* --- Section headings --- */
+        .section-title {
+            font-size: 9.5pt;
+            font-weight: 700;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-top: 8px;
+            margin-bottom: 4px;
+            padding-bottom: 2px;
+            border-bottom: 1.5px solid #1a1a1a;
+        }
+
+        /* --- Professional Summary --- */
+        .summary {
+            font-size: 8.5pt;
+            color: #222;
+            line-height: 1.45;
+            margin-bottom: 0;
+        }
+
+        /* --- Skills / Core Competencies --- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1px 18px;
+            font-size: 8pt;
+            margin-bottom: 0;
+        }
+
+        .skills-grid .skill-row {
+            display: flex;
+            gap: 4px;
+        }
+
+        .skills-grid .skill-label {
+            font-weight: 600;
+            color: #1a1a1a;
+            min-width: 120px;
+            white-space: nowrap;
+        }
+
+        .skills-grid .skill-value {
+            color: #333;
+        }
+
+        /* --- Experience --- */
+        .exp-block {
+            margin-bottom: 6px;
+        }
+
+        .exp-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .exp-role {
+            font-size: 9.5pt;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .exp-date {
+            font-size: 8pt;
+            color: #555;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .exp-company {
+            font-size: 8.5pt;
+            color: #444;
+            font-weight: 500;
+            margin-bottom: 1px;
+        }
+
+        .exp-block ul {
+            padding-left: 14px;
+            margin: 0;
+        }
+
+        .exp-block li {
+            font-size: 8pt;
+            color: #222;
+            margin-bottom: 0.5px;
+            line-height: 1.4;
+        }
+
+        .exp-block li strong {
+            font-weight: 600;
+        }
+
+        /* --- Education --- */
+        .edu-block {
+            margin-bottom: 3px;
+        }
+
+        .edu-block .edu-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .edu-block .edu-degree {
+            font-size: 8.5pt;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .edu-block .edu-date {
+            font-size: 8pt;
+            color: #555;
+        }
+
+        .edu-block .edu-school {
+            font-size: 8pt;
+            color: #444;
+        }
+
+        /* --- Print --- */
+        @media print {
+            body { background: none; }
+            .page { padding: 0; max-width: none; }
+        }
+
+        @media screen {
+            .page {
+                box-shadow: 0 0 30px rgba(0,0,0,0.08);
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- HEADER -->
+    <header class="resume-header">
+        <h1>Sachin Patil</h1>
+        <div class="title">Head of Technology | AI Systems Architect | Engineering Leader</div>
+        <div class="contact-row">
+            <span>Mumbai, India</span>
+            <span>+91 9766919241</span>
+            <a href="mailto:sp.sachin106@gmail.com">sp.sachin106@gmail.com</a>
+            <a href="https://www.linkedin.com/in/sachinpatil106">linkedin.com/in/sachinpatil106</a>
+            <a href="https://github.com/sachinpatil4113">github.com/sachinpatil4113</a>
+            <a href="https://sachinpatil.dev">sachinpatil.dev</a>
+        </div>
+    </header>
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <h2 class="section-title">Professional Summary</h2>
+    <p class="summary">
+        AI Enthusiastic technology leader with 10+ years of experience designing and delivering scalable, intelligent systems across EdTech, Fintech, Healthcare, and Marketplace domains. Proven track record of building multi-agent AI architectures, generative AI products, and robust distributed systems serving millions of users. Led engineering teams of 25+ across full product lifecycles — from strategy and system design to hands-on development and production delivery. Reduced infrastructure costs by 30% and increased team productivity by 50% through process optimization, mentoring, and accountability-driven leadership. Passionate about leveraging AI to solve complex business problems at scale.
+    </p>
+
+    <!-- CORE COMPETENCIES -->
+    <h2 class="section-title">Core Competencies</h2>
+    <div class="skills-grid">
+        <div class="skill-row"><span class="skill-label">AI & ML:</span><span class="skill-value">LLMs, Multi-Agent Systems, NLP, Generative AI, RAG, LangChain, Prompt Engineering, Speech-to-Text/TTS</span></div>
+        <div class="skill-row"><span class="skill-label">Architecture:</span><span class="skill-value">System Design, Microservices, Serverless, Event-Driven, API Design, Scalable Distributed Systems</span></div>
+        <div class="skill-row"><span class="skill-label">Languages:</span><span class="skill-value">Node.js, TypeScript, Python, PHP, JavaScript</span></div>
+        <div class="skill-row"><span class="skill-label">Frameworks:</span><span class="skill-value">Express.js, Django, React.js, Next.js, Angular, Laravel, Codeigniter</span></div>
+        <div class="skill-row"><span class="skill-label">Cloud & DevOps:</span><span class="skill-value">AWS, GCP, Docker, Kubernetes, Jenkins CI/CD, Kafka, RabbitMQ, SQS</span></div>
+        <div class="skill-row"><span class="skill-label">Databases:</span><span class="skill-value">MySQL, PostgreSQL, MongoDB, Elasticsearch, Algolia, Prisma ORM</span></div>
+        <div class="skill-row"><span class="skill-label">Leadership:</span><span class="skill-value">Team Building (25+), Budget Management, Agile/Scrum/Kanban, Stakeholder Management</span></div>
+        <div class="skill-row"><span class="skill-label">Strategy:</span><span class="skill-value">Technology Roadmap, Product Ownership, Mentoring & Coaching, KRA/KPI Tracking, Vendor Management</span></div>
+    </div>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <h2 class="section-title">Professional Experience</h2>
+
+    <div class="exp-block">
+        <div class="exp-top">
+            <span class="exp-role">Head of Technology</span>
+            <span class="exp-date">Apr 2025 — Present</span>
+        </div>
+        <div class="exp-company">WiZR | Eduvanz Finance Private Limited (EFPL) — Mumbai</div>
+        <ul>
+            <li>Defining and executing <strong>AI-first technology strategy</strong> across EdTech and Fintech verticals, accountable for architecture decisions and delivery outcomes</li>
+            <li>Designed and deployed a <strong>multi-agent AI system across all major Indian languages</strong> using LLMs, NLP pipelines, and orchestration frameworks — enabling context-aware, multilingual interactions at scale</li>
+            <li>Architected an <strong>AI-powered assessment creation engine</strong> with intelligent question generation, adaptive difficulty calibration, and automated evaluation workflows</li>
+            <li>Built an <strong>AI speech evaluation system</strong> that produces generative AI reports for product gap analysis — combining speech-to-text, sentiment analysis, and automated insight generation</li>
+            <li>Leading and mentoring <strong>25+ engineers</strong> (developers, QA, DevOps) with hands-on coding, daily code reviews, and accountability through KRA/KPI tracking</li>
+            <li>Architecting <strong>scalable, robust distributed systems</strong> for B2B and B2C products — including REST APIs (Node.js/TypeScript),  mobile apps, integration systems, and institute portals</li>
+            <li>Managing engineering budgets, vendor relationships, and compliance across production environments</li>
+        </ul>
+    </div>
+
+    <div class="exp-block">
+        <div class="exp-top">
+            <span class="exp-role">Vice President — Technology</span>
+            <span class="exp-date">Jul 2024 — Apr 2025</span>
+        </div>
+        <div class="exp-company">WiZR | Eduvanz Finance Private Limited (EFPL) — Mumbai</div>
+        <ul>
+            <li>Led <strong>Marketplace and Fintech</strong> segments from zero to launch — designed product, selected technology stack, built architecture, and hired engineering teams</li>
+            <li>Owned end-to-end product delivery across B2C (WiZR skilling marketplace) and B2B2C (Eduvanz education loans) with consistent on-time delivery</li>
+            <li>Collaborated directly with <strong>CXOs</strong> on technology strategy, translating business goals into scalable technical solutions</li>
+            <li>Established code review culture, CI/CD pipelines, and engineering best practices for new verticals</li>
+        </ul>
+    </div>
+
+    <div class="exp-block">
+        <div class="exp-top">
+            <span class="exp-role">Sr. Engineering Manager</span>
+            <span class="exp-date">Apr 2022 — Jun 2023</span>
+        </div>
+        <div class="exp-company">Eduvanz Finance Private Limited — Mumbai</div>
+        <ul>
+            <li>Led a team of <strong>25 engineers</strong> across development, QA, and DevOps — responsible for sprint planning, delivery, and performance reviews</li>
+            <li>Reduced server infrastructure costs by <strong>30%</strong> through architecture optimization and resource right-sizing on AWS</li>
+            <li>Increased team productivity by <strong>50%</strong> by implementing improved workflows, automation tools, and mentoring programs</li>
+            <li>Implemented Agile methodologies (Scrum/Kanban), reducing project delivery time by <strong>20%</strong></li>
+            <li>Mentored and coached team members, achieving <strong>15% increase in retention</strong> and <strong>20% improvement in satisfaction scores</strong></li>
+        </ul>
+    </div>
+
+    <div class="exp-block">
+        <div class="exp-top">
+            <span class="exp-role">Engineering Manager</span>
+            <span class="exp-date">Jul 2020 — Apr 2022</span>
+        </div>
+        <div class="exp-company">Eduvanz Finance Private Limited — Mumbai</div>
+        <ul>
+            <li>Managed <strong>20+ engineers</strong>, driving cross-functional collaboration between development, product, and operations teams</li>
+            <li>Owned engineering budget allocation and cost optimization, delivering measurable infrastructure savings</li>
+            <li>Implemented Scrum and Kanban workflows for adaptive, faster delivery cycles across multiple product lines</li>
+            <li>Accountable for technical delivery quality, code review standards, and production stability</li>
+        </ul>
+    </div>
+
+    <div class="exp-block">
+        <div class="exp-top">
+            <span class="exp-role">Technical Team Lead</span>
+            <span class="exp-date">Sep 2018 — Jul 2020</span>
+        </div>
+        <div class="exp-company">Eduvanz Finance Private Limited — Pune</div>
+        <ul>
+            <li>Joined as <strong>core founding team member</strong>, defining technology direction and making strategic architecture decisions</li>
+            <li>Built the engineering team from ground up — hiring, onboarding, mentoring, and establishing development culture</li>
+            <li>Designed and set up <strong>infrastructure, CI/CD pipelines, monitoring, and server environments</strong> from scratch</li>
+            <li>Integrated external systems including <strong>banks, payment gateways, credit bureaus, and KYC vendors</strong> for seamless operations</li>
+        </ul>
+    </div>
+
+    <div class="exp-block">
+        <div class="exp-top">
+            <span class="exp-role">Senior Full Stack Developer</span>
+            <span class="exp-date">Jun 2017 — Sep 2018</span>
+        </div>
+        <div class="exp-company">Gromor Finance Pvt. Ltd. (NBFC Fintech, MSME Loans) — Mumbai</div>
+        <ul>
+            <li>Architected <strong>microservices</strong> for loan management and origination systems using Angular, PHP, JavaScript, and Python</li>
+            <li>Led UI development, performed code reviews, and managed a team of 7 (developers, QA, DevOps)</li>
+            <li>Managed <strong>production and staging servers</strong>, AWS cloud infrastructure, and CI/CD pipelines</li>
+        </ul>
+    </div>
+
+    <div class="exp-block">
+        <div class="exp-top">
+            <span class="exp-role">Software Developer</span>
+            <span class="exp-date">Aug 2016 — Jun 2017</span>
+        </div>
+        <div class="exp-company">Crelio Health (LiveHealth) — Pune</div>
+        <ul>
+            <li>Built <strong>HIPAA-compliant healthcare systems</strong> using Python/Django, integrating healthcare machines and CRM platforms</li>
+            <li>Designed AWS-powered real-time notification workflows (SMS/Email) for patients and doctors</li>
+            <li>Enhanced data security and care coordination through <strong>EHR portals</strong> using JavaScript and MySQL</li>
+        </ul>
+    </div>
+
+    <div class="exp-block">
+        <div class="exp-top">
+            <span class="exp-role">Software Developer</span>
+            <span class="exp-date">Jun 2015 — Jul 2016</span>
+        </div>
+        <div class="exp-company">Tudip Technologies Pvt. Ltd. — Pune</div>
+        <ul>
+            <li>Full-stack development across complete SDLC using PHP (CodeIgniter/Laravel), Python (Django), HTML, CSS, JavaScript</li>
+            <li>Collaborated with <strong>U.S. and U.K. clients</strong> on diverse web application projects — requirements gathering through deployment</li>
+            <li>Improved application performance by <strong>30%</strong> through code optimization and efficient database queries</li>
+        </ul>
+    </div>
+
+    <!-- KEY AI PROJECTS -->
+    <h2 class="section-title">Key AI Projects</h2>
+    <div class="exp-block">
+        <ul>
+            <li><strong>Multi-Language AI Agent System:</strong> Designed multi-agent AI architecture operating across all major Indian languages using LLMs, NLP, and agent orchestration — delivering context-aware, scalable interactions bridging language barriers</li>
+            <li><strong>Assessment Creation AI Engine:</strong> Architected AI-powered assessment agent generating adaptive evaluations with intelligent question generation, difficulty scaling, and comprehensive evaluation frameworks using generative AI</li>
+            <li><strong>AI Speech Evaluation & Product Gap Analysis:</strong> Built speech-to-text evaluation pipeline with sentiment analysis and generative AI reporting, transforming voice data into actionable product insights and gap analysis reports</li>
+        </ul>
+    </div>
+
+    <!-- EDUCATION -->
+    <h2 class="section-title">Education</h2>
+    <div class="edu-block">
+        <div class="edu-top">
+            <span class="edu-degree">Bachelor of Engineering (B.E.)</span>
+            <span class="edu-date">2012 — 2015</span>
+        </div>
+        <div class="edu-school">Pune University — Late G.N. Sapkal College of Engineering, Nashik</div>
+    </div>
+    <div class="edu-block">
+        <div class="edu-top">
+            <span class="edu-degree">Polytechnic Diploma</span>
+            <span class="edu-date">2009 — 2012</span>
+        </div>
+        <div class="edu-school">MSBTE — Jalgaon</div>
+    </div>
+
+</div>
+</body>
+</html>
