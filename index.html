@@ -73,10 +73,10 @@
                     <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
                     <a href="Sachin-Patil-Resume.pdf" target="_blank" class="btn btn-outline"><i class="fas fa-download"></i> Resume</a>
                 </div>
-                <button class="video-play-btn" id="videoPlayBtn">
+                <!-- <button class="video-play-btn" id="videoPlayBtn">
                     <span class="video-play-icon"><i class="fas fa-play"></i></span>
                     <span>Watch My Intro</span>
-                </button>
+                </button> -->
             </div>
             <div class="hero-image">
                 <div class="hero-img-wrap">
@@ -88,6 +88,39 @@
         <div class="scroll-indicator" aria-hidden="true">
             <span>Scroll</span>
             <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Terminal -->
+    <section class="terminal-section" id="terminal" data-chapter="05">
+        <div class="container">
+            <h2 class="section-heading reveal"><span class="gradient-text">Explore</span> My World</h2>
+            <p class="section-sub reveal">Type a command or click a suggestion below</p>
+            <div class="terminal reveal">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot-red"></span>
+                        <span class="dot-yellow"></span>
+                        <span class="dot-green"></span>
+                    </div>
+                    <span class="terminal-title">sachin@portfolio ~ %</span>
+                </div>
+                <div class="terminal-body" id="terminalBody">
+                    <div class="terminal-output" id="terminalOutput"></div>
+                    <div class="terminal-input-line">
+                        <span class="terminal-prompt">visitor@sachin ~ $</span>
+                        <input type="text" id="terminalInput" autocomplete="off" spellcheck="false" placeholder="Type 'help' to get started...">
+                    </div>
+                </div>
+            </div>
+            <div class="terminal-suggestions">
+                <button class="suggestion-chip" data-cmd="about">about</button>
+                <button class="suggestion-chip" data-cmd="skills">skills</button>
+                <button class="suggestion-chip" data-cmd="experience">experience</button>
+                <button class="suggestion-chip" data-cmd="contact">contact</button>
+                <button class="suggestion-chip" data-cmd="play">play game</button>
+                <button class="suggestion-chip" data-cmd="help">help</button>
+            </div>
         </div>
     </section>
 
@@ -394,38 +427,6 @@
         </div>
     </section>
 
-    <!-- Terminal -->
-    <section class="terminal-section" id="terminal" data-chapter="05">
-        <div class="container">
-            <h2 class="section-heading reveal"><span class="gradient-text">Explore</span> My World</h2>
-            <p class="section-sub reveal">Type a command or click a suggestion below</p>
-            <div class="terminal reveal">
-                <div class="terminal-header">
-                    <div class="terminal-dots">
-                        <span class="dot-red"></span>
-                        <span class="dot-yellow"></span>
-                        <span class="dot-green"></span>
-                    </div>
-                    <span class="terminal-title">sachin@portfolio ~ %</span>
-                </div>
-                <div class="terminal-body" id="terminalBody">
-                    <div class="terminal-output" id="terminalOutput"></div>
-                    <div class="terminal-input-line">
-                        <span class="terminal-prompt">visitor@sachin ~ $</span>
-                        <input type="text" id="terminalInput" autocomplete="off" spellcheck="false" placeholder="Type 'help' to get started...">
-                    </div>
-                </div>
-            </div>
-            <div class="terminal-suggestions">
-                <button class="suggestion-chip" data-cmd="about">about</button>
-                <button class="suggestion-chip" data-cmd="skills">skills</button>
-                <button class="suggestion-chip" data-cmd="experience">experience</button>
-                <button class="suggestion-chip" data-cmd="contact">contact</button>
-                <button class="suggestion-chip" data-cmd="play">play game</button>
-                <button class="suggestion-chip" data-cmd="help">help</button>
-            </div>
-        </div>
-    </section>
 
     <!-- Games -->
     <section class="games" id="games" data-chapter="06">
