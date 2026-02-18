@@ -30,6 +30,8 @@
                 <li><a href="#innovation">AI Innovation</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#terminal">Terminal</a></li>
+                <li><a href="#games">Games</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="https://sp-sachin106.medium.com/" target="_blank">Blogs</a></li>
                 <li><a href="Sachin-Patil-Resume.pdf" target="_blank" class="nav-resume-btn">Resume</a></li>
@@ -47,6 +49,8 @@
             <li><a href="#innovation">AI Innovation</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#terminal">Terminal</a></li>
+            <li><a href="#games">Games</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="https://sp-sachin106.medium.com/" target="_blank">Blogs</a></li>
             <li><a href="Sachin-Patil-Resume.pdf" target="_blank">Resume</a></li>
@@ -64,11 +68,15 @@
                 <p class="hero-greeting">Hello, I'm</p>
                 <h1>Sachin Patil</h1>
                 <h2 class="typing-wrap"><span id="typingText"></span><span class="cursor">|</span></h2>
-                <p class="hero-desc">Building intelligent systems that scale. 10+ years of expertise in AI-driven architecture, multi-agent systems, and technology leadership across Fintech, EdTech, Healthcare &amp; Marketplace domains.</p>
+                <p class="hero-desc word-reveal">Building intelligent systems that scale. 10+ years of expertise in AI-driven architecture, multi-agent systems, and technology leadership across Fintech, EdTech, Healthcare &amp; Marketplace domains.</p>
                 <div class="hero-cta">
                     <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
                     <a href="Sachin-Patil-Resume.pdf" target="_blank" class="btn btn-outline"><i class="fas fa-download"></i> Resume</a>
                 </div>
+                <button class="video-play-btn" id="videoPlayBtn">
+                    <span class="video-play-icon"><i class="fas fa-play"></i></span>
+                    <span>Watch My Intro</span>
+                </button>
             </div>
             <div class="hero-image">
                 <div class="hero-img-wrap">
@@ -84,14 +92,14 @@
     </section>
 
     <!-- About -->
-    <section class="about" id="about">
+    <section class="about" id="about" data-chapter="01">
         <div class="container">
             <h2 class="section-heading reveal"><span class="gradient-text">About</span> Me</h2>
             <div class="about-grid">
                 <div class="about-text reveal-left reveal">
-                    <p>I'm a technology leader who believes <strong>AI isn't just a tool&mdash;it's a paradigm shift</strong>. As Partner &amp; Head of Technology at WiZR, I lead teams of 25+ engineers, architect AI-first products, and design systems that serve millions.</p>
-                    <p>My journey across EdTech, Fintech, Healthcare, and Marketplace domains has given me a unique perspective: I don't just build software&mdash;I engineer <strong>intelligent, scalable ecosystems</strong>. From designing multi-agent AI systems across all major Indian languages to building assessment engines powered by AI, I thrive at the intersection of artificial intelligence and system architecture.</p>
-                    <p>I bring a hands-on approach to technology leadership, balancing strategic vision with deep technical execution. Whether it's reducing server costs by 30%, boosting team productivity by 50%, or pioneering AI-driven product innovation&mdash;I'm driven by <strong>measurable impact</strong>.</p>
+                    <p class="word-reveal">I'm a technology leader who believes AI isn't just a tool — it's a paradigm shift. As Partner &amp; Head of Technology at WiZR, I lead teams of 25+ engineers, architect AI-first products, and design systems that serve millions.</p>
+                    <p class="word-reveal">My journey across EdTech, Fintech, Healthcare, and Marketplace domains has given me a unique perspective: I don't just build software — I engineer intelligent, scalable ecosystems. From designing multi-agent AI systems across all major Indian languages to building assessment engines powered by AI, I thrive at the intersection of artificial intelligence and system architecture.</p>
+                    <p class="word-reveal">I bring a hands-on approach to technology leadership, balancing strategic vision with deep technical execution. Whether it's reducing server costs by 30%, boosting team productivity by 50%, or pioneering AI-driven product innovation — I'm driven by measurable impact.</p>
                 </div>
                 <div class="about-stats">
                     <div class="stat-card reveal">
@@ -116,7 +124,7 @@
     </section>
 
     <!-- AI Innovation -->
-    <section class="innovation" id="innovation">
+    <section class="innovation" id="innovation" data-chapter="02">
         <div class="container">
             <h2 class="section-heading reveal"><span class="gradient-text">AI</span> Innovation</h2>
             <p class="section-sub reveal">Pioneering AI-first solutions that transform how businesses operate</p>
@@ -163,7 +171,7 @@
     </section>
 
     <!-- Experience -->
-    <section class="experience" id="experience">
+    <section class="experience" id="experience" data-chapter="03">
         <div class="container">
             <h2 class="section-heading reveal"><span class="gradient-text">My</span> Experience</h2>
             <div class="timeline">
@@ -309,7 +317,7 @@
     </section>
 
     <!-- Skills -->
-    <section class="skills" id="skills">
+    <section class="skills" id="skills" data-chapter="04">
         <div class="container">
             <h2 class="section-heading reveal"><span class="gradient-text">My</span> Skills</h2>
             <div class="skills-grid">
@@ -386,8 +394,74 @@
         </div>
     </section>
 
+    <!-- Terminal -->
+    <section class="terminal-section" id="terminal" data-chapter="05">
+        <div class="container">
+            <h2 class="section-heading reveal"><span class="gradient-text">Explore</span> My World</h2>
+            <p class="section-sub reveal">Type a command or click a suggestion below</p>
+            <div class="terminal reveal">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot-red"></span>
+                        <span class="dot-yellow"></span>
+                        <span class="dot-green"></span>
+                    </div>
+                    <span class="terminal-title">sachin@portfolio ~ %</span>
+                </div>
+                <div class="terminal-body" id="terminalBody">
+                    <div class="terminal-output" id="terminalOutput"></div>
+                    <div class="terminal-input-line">
+                        <span class="terminal-prompt">visitor@sachin ~ $</span>
+                        <input type="text" id="terminalInput" autocomplete="off" spellcheck="false" placeholder="Type 'help' to get started...">
+                    </div>
+                </div>
+            </div>
+            <div class="terminal-suggestions">
+                <button class="suggestion-chip" data-cmd="about">about</button>
+                <button class="suggestion-chip" data-cmd="skills">skills</button>
+                <button class="suggestion-chip" data-cmd="experience">experience</button>
+                <button class="suggestion-chip" data-cmd="contact">contact</button>
+                <button class="suggestion-chip" data-cmd="play">play game</button>
+                <button class="suggestion-chip" data-cmd="help">help</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games -->
+    <section class="games" id="games" data-chapter="06">
+        <div class="container">
+            <h2 class="section-heading reveal"><span class="gradient-text">Fun</span> Zone</h2>
+            <p class="section-sub reveal">Take a break and test your skills</p>
+            <div class="games-grid">
+                <div class="game-card reveal" id="memoryGame">
+                    <div class="game-header">
+                        <h3><i class="fas fa-brain"></i> Tech Memory Match</h3>
+                        <div class="game-stats">
+                            <span id="memoryMoves">Moves: 0</span>
+                            <span id="memoryTimer">Time: 0s</span>
+                        </div>
+                    </div>
+                    <div class="memory-board" id="memoryBoard"></div>
+                    <button class="btn btn-primary game-btn" id="memoryReset"><i class="fas fa-redo"></i> New Game</button>
+                </div>
+                <div class="game-card reveal" id="typingGame">
+                    <div class="game-header">
+                        <h3><i class="fas fa-keyboard"></i> Code Typer</h3>
+                        <div class="game-stats">
+                            <span id="typingWpm">WPM: --</span>
+                            <span id="typingAccuracy">Accuracy: --</span>
+                        </div>
+                    </div>
+                    <div class="typing-display" id="typingDisplay"></div>
+                    <input type="text" id="typingInput" class="typing-input" placeholder="Start typing when ready..." autocomplete="off" spellcheck="false">
+                    <button class="btn btn-primary game-btn" id="typingReset"><i class="fas fa-redo"></i> New Challenge</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact -->
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" data-chapter="07">
         <div class="container">
             <h2 class="section-heading reveal"><span class="gradient-text">Get In</span> Touch</h2>
             <p class="section-sub reveal">Let's build something intelligent together</p>
@@ -430,6 +504,17 @@
             </div>
         </div>
     </footer>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-backdrop" id="videoModalBackdrop"></div>
+        <div class="video-modal-content">
+            <button class="video-modal-close" id="videoModalClose"><i class="fas fa-times"></i></button>
+            <div class="video-modal-player">
+                <iframe id="videoIframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
