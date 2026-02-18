@@ -1,30 +1,30 @@
 /* ============================================================
    SACHIN PATIL — AI-FIRST PORTFOLIO
-   Theme: Warm Editorial — ivory, burnt orange, refined serif
+   Theme: Dark Editorial — dark backgrounds, burnt orange accents, refined serif
    Fonts: Instrument Serif (display) + DM Sans (body)
    ============================================================ */
 
 /* --- Custom Properties --- */
 :root {
-    --bg-primary:    #FAF9F6;
-    --bg-alt:        #F0EDE6;
-    --surface:       #FFFFFF;
-    --text-primary:  #1A1816;
-    --text-secondary:#5E5A55;
-    --text-muted:    #9C9690;
+    --bg-primary:    #121010;
+    --bg-alt:        #1A1816;
+    --surface:       #1E1C1A;
+    --text-primary:  #F0EDE6;
+    --text-secondary:#A8A29E;
+    --text-muted:    #6B6560;
     --accent:        #E04E16;
-    --accent-hover:  #C44312;
-    --accent-soft:   rgba(224, 78, 22, 0.07);
-    --border:        #E5E1DB;
-    --border-light:  #EEEAE4;
-    --shadow-sm:     0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02);
-    --shadow-md:     0 4px 14px rgba(0,0,0,0.06), 0 2px 6px rgba(0,0,0,0.03);
-    --shadow-lg:     0 12px 40px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
+    --accent-hover:  #F06830;
+    --accent-soft:   rgba(224, 78, 22, 0.12);
+    --border:        #2A2725;
+    --border-light:  #232120;
+    --shadow-sm:     0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.15);
+    --shadow-md:     0 4px 14px rgba(0,0,0,0.3), 0 2px 6px rgba(0,0,0,0.2);
+    --shadow-lg:     0 12px 40px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.25);
     --radius:        16px;
     --radius-sm:     10px;
     --font-display:  'Instrument Serif', Georgia, serif;
     --font-body:     'DM Sans', system-ui, sans-serif;
-    --glow-orange:   rgba(224, 78, 22, 0.15);
+    --glow-orange:   rgba(224, 78, 22, 0.2);
 }
 
 /* --- Reset & Base --- */
@@ -110,12 +110,12 @@ header {
 }
 
 header.scrolled {
-    background: rgba(250, 249, 246, 0.92);
+    background: rgba(18, 16, 16, 0.92);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: 0.8rem 2.5rem;
     border-bottom: 1px solid var(--border-light);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
 .logo {
@@ -206,7 +206,7 @@ header.scrolled {
 .mobile-nav {
     position: fixed;
     inset: 0;
-    background: rgba(250, 249, 246, 0.98);
+    background: rgba(18, 16, 16, 0.98);
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     z-index: 1050;
@@ -241,8 +241,8 @@ header.scrolled {
     justify-content: center;
     overflow: hidden;
     background:
-        radial-gradient(ellipse at 20% 50%, rgba(224, 78, 22, 0.05) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 20%, rgba(224, 78, 22, 0.03) 0%, transparent 40%),
+        radial-gradient(ellipse at 20% 50%, rgba(224, 78, 22, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(224, 78, 22, 0.05) 0%, transparent 40%),
         var(--bg-primary);
 }
 
@@ -276,7 +276,7 @@ header.scrolled {
 .hero::before {
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(224, 78, 22, 0.08), transparent 70%);
+    background: radial-gradient(circle, rgba(224, 78, 22, 0.12), transparent 70%);
     top: -10%;
     right: -5%;
     animation: floatOrb1 12s ease-in-out infinite;
@@ -284,7 +284,7 @@ header.scrolled {
 .hero::after {
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(224, 78, 22, 0.06), transparent 70%);
+    background: radial-gradient(circle, rgba(224, 78, 22, 0.1), transparent 70%);
     bottom: -5%;
     left: -5%;
     animation: floatOrb2 15s ease-in-out infinite;
@@ -564,7 +564,7 @@ section {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(224, 78, 22, 0.04), transparent 70%);
+    background: radial-gradient(circle, rgba(224, 78, 22, 0.08), transparent 70%);
     top: -80px;
     left: -100px;
     filter: blur(40px);
@@ -644,7 +644,7 @@ section {
    ============================================================ */
 .innovation {
     background:
-        radial-gradient(circle, var(--border) 1px, transparent 1px),
+        radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
         var(--bg-primary);
     background-size: 28px 28px;
     overflow: hidden;
@@ -664,7 +664,7 @@ section {
 }
 .innovation-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 50px rgba(224, 78, 22, 0.12), 0 8px 20px rgba(0,0,0,0.06);
+    box-shadow: 0 20px 50px rgba(224, 78, 22, 0.15), 0 8px 20px rgba(0,0,0,0.3);
 }
 
 .card-border {
@@ -901,7 +901,7 @@ section {
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(224, 78, 22, 0.04), transparent 70%);
+    background: radial-gradient(circle, rgba(224, 78, 22, 0.08), transparent 70%);
     bottom: -100px;
     right: -100px;
     filter: blur(60px);
@@ -1046,7 +1046,7 @@ section {
 .contact-card:hover {
     transform: translateY(-8px);
     border-color: rgba(224, 78, 22, 0.3);
-    box-shadow: 0 16px 40px rgba(224, 78, 22, 0.1), 0 4px 12px rgba(0,0,0,0.04);
+    box-shadow: 0 16px 40px rgba(224, 78, 22, 0.12), 0 4px 12px rgba(0,0,0,0.3);
     color: var(--text-primary);
 }
 
@@ -1086,7 +1086,7 @@ section {
    FOOTER
    ============================================================ */
 footer {
-    background: #1A1816;
+    background: #0D0B0A;
     padding: 2.5rem 0;
     border-top: none;
 }
@@ -1504,7 +1504,7 @@ section[data-chapter]::after {
    INTERACTIVE TERMINAL
    ============================================================ */
 .terminal-section {
-    background: #1A1816;
+    background: #0D0B0A;
     color: rgba(255, 255, 255, 0.85);
     overflow: hidden;
 }
@@ -1646,7 +1646,7 @@ section[data-chapter]::after {
    MINI-GAMES
    ============================================================ */
 .games {
-    background: #1A1816;
+    background: #0D0B0A;
     color: rgba(255, 255, 255, 0.85);
     overflow: hidden;
 }
